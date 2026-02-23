@@ -264,7 +264,7 @@ Brief description of what this PR adds or changes.
 - [ ] Content is technically accurate
 - [ ] Writing follows style guide
 - [ ] All links are functional
-- [ ] Mathematical notation uses supported formats (see style guide)
+- [ ] Mathematical notation uses supported LaTeX formats ($...$ or \(...\) for inline, $$...$$ or \[...\] for block)
 - [ ] Examples are tested and correct
 - [ ] Citations provided for non-original content
 - [ ] Commit messages are descriptive
@@ -346,42 +346,33 @@ For detailed style guidelines, see [templates/style-guide.md](templates/style-gu
 
 #### Mathematical Notation
 
-**Supported Formats**: We support multiple LaTeX-style delimiters for mathematical expressions.
+**Supported Formats**: We support standard LaTeX-style delimiters for mathematical expressions.
 
 **Inline Math** (within sentences):
-- ✅ Option 1: `\( O(n \log n) \)` → Renders as \( O(n \log n) \)
-- ✅ Option 2: `$O(n \log n)$` → Renders as $O(n \log n)$
+- Use `$...$` or `\(...\)` for inline expressions
+- Example: `The complexity is $O(n \log n)$.` or `The complexity is \( O(n \log n) \).`
 
 **Block (Display) Math** (centered equations):
-- ✅ Option 1:
+- Use `$$...$$` or `\[...\]` for centered equations
+- Examples:
+  ```
+  $$
+  f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+  $$
+  ```
+  or
   ```
   \[
-  f(n) = \sum_{i=1}^{n} i
+  f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
   \]
-  ```
-- ✅ Option 2:
-  ```
-  $$
-  f(n) = \sum_{i=1}^{n} i
-  $$
   ```
 
 **Best Practices**:
 - Use consistent notation throughout a single article
-- Either style is acceptable, but don't mix both in the same document
+- Either `$...$` or `\(...\)` is fine for inline; either `$$...$$` or `\[...\]` is fine for block
+- Don't mix different styles within the same article
 - Test rendering in preview before submitting
 - Ensure all braces, subscripts, and superscripts are properly formatted
-
-**Examples**:
-```markdown
-The time complexity is \( O(n^2) \) in the worst case.
-The time complexity is $O(n^2)$ in the worst case.
-
-The summation formula:
-$$
-S = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
-$$
-```
 
 #### Lists
 
