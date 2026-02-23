@@ -284,5 +284,6 @@ MON CS DOCS is made possible by:
 Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 <img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/logo.png" alt="MON CS DOCS" width="100"/>
+<img src="https://moebiusorder.com/logo.png" alt="Moebius Order" width="100"/>
 
 </div>
