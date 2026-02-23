@@ -1,6 +1,6 @@
 # MON CS DOCS Style Guide
 
-**Version**: 1.1  
+**Version**: 1.2  
 **Last Updated**: 2026-02-23  
 **Maintainer**: Moebius Order
 
@@ -194,64 +194,86 @@ Use to separate major sections.
 
 ## Mathematical Notation
 
-### CRITICAL STANDARD: LaTeX Delimiters Only
+### Supported Formats
 
-**MANDATORY**: All mathematical expressions MUST use LaTeX-style delimiters that are compatible with our rendering engine.
+**We support multiple LaTeX-style delimiters** for maximum flexibility.
 
-### Inline Math
+### Inline Math (within sentences)
 
-**Format**: Use `\( ... \)` for inline mathematical expressions.
-
+**Option 1**: `\( ... \)` delimiters
 ```markdown
-The time complexity is \( O(n \log n) \).
-For any input size \( n \), the algorithm runs in \( O(n^2) \) time.
+The complexity is \( O(n \log n) \).
 ```
 
-**Rendered as**: The time complexity is \( O(n \log n) \).
+**Option 2**: `$ ... $` delimiters
+```markdown
+The complexity is $O(n \log n)$.
+```
 
-### Block (Display) Math
+Both formats are **equally acceptable**.
 
-**Format**: Use `\[ ... \]` for centered, display-style equations.
+### Block (Display) Math (centered equations)
 
+**Option 1**: `\[ ... \]` delimiters
 ```markdown
 \[
 f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \]
 ```
 
-**Rendered as**: 
-\[
+**Option 2**: `$$ ... $$` delimiters
+```markdown
+$$
 f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+```
+
+Both formats are **equally acceptable**.
+
+### Best Practices
+
+- **Consistency**: Use the same notation style throughout a single article
+- **Don't mix**: Choose either `\(\)` / `\[\]` OR `$` / `$$` for an entire document
+- **Test rendering**: Always preview your markdown to ensure math displays correctly
+- **Proper syntax**: Ensure all braces `{}`, subscripts `_`, and superscripts `^` are correctly formatted
+
+### Examples
+
+**Using \(\) and \[\]**:
+```markdown
+The time complexity is \( O(n^2) \) in the worst case.
+
+The summation formula:
+\[
+S = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \]
+```
 
-### Prohibited Syntax
+**Using $ and $$**:
+```markdown
+The time complexity is $O(n^2)$ in the worst case.
 
-**NEVER USE**:
-- ❌ Single dollar signs: `$O(n)$`
-- ❌ Double dollar signs: `$$E = mc^2$$`
-- ❌ Any variation of `$...$` or `$$...$$`
-
-**Why Dollar Signs Are Prohibited**:
-1. Our rendering system does NOT support dollar-sign delimiters
-2. Dollar signs will cause mathematical expressions to break on the platform
-3. Our CI/CD validation workflow flags dollar-sign usage as errors
-4. LaTeX-style `\(` and `\[` delimiters ensure cross-platform compatibility
+The summation formula:
+$$
+S = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+```
 
 ### Correct vs. Incorrect Examples
 
-| Scenario | ❌ WRONG | ✅ CORRECT |
-|:---------|:---------|:-----------|
-| Inline complexity | `The algorithm is $O(n)$.` | `The algorithm is \( O(n) \).` |
-| Inline equation | `Let $x = 5$.` | `Let \( x = 5 \).` |
-| Display equation | `$$f(x) = x^2$$` | `\[ f(x) = x^2 \]` |
-| Summation | `$$\sum_{i=1}^{n} i$$` | `\[ \sum_{i=1}^{n} i \]` |
-| Multiple inline | `$a$, $b$, $c$` | `\( a \), \( b \), \( c \)` |
+| Scenario | ✅ CORRECT (Option 1) | ✅ CORRECT (Option 2) | ❌ MIXED (Wrong) |
+|:---------|:---------------------|:---------------------|:----------------|
+| Inline | `\( O(n) \)` | `$O(n)$` | `$O(n)\)` |
+| Block | `\[ x = 5 \]` | `$$ x = 5 $$` | `$$ x = 5 \]` |
+| Multiple inline | `\( a \), \( b \)` | `$a$, $b$` | `$a\), \( b $` |
+
+**Key Rule**: Pick one style and stick with it in each article.
 
 ### Additional Rules
 
 - **Define variables clearly**: After any equation, explain what each variable represents
 - **Explain equations in text**: Don't just show math—describe what it means
-- **Use proper LaTeX syntax**: Ensure all braces `{}`, subscripts `_`, and superscripts `^` are correctly formatted
+- **Use proper LaTeX syntax**: Ensure all commands are correctly formatted
 - **Test rendering**: Preview your markdown to ensure math displays correctly
 - **Consistency**: Use the same notation throughout the entire article
 
@@ -377,7 +399,7 @@ According to Knuth (1997), this approach...
 - Use first person ("I think", "we believe")
 - Make unsubstantiated claims
 - Use excessive exclamation points
-- **Use dollar signs for math** (`$x$` or `$$x$$`)
+- Mix math notation styles in the same article
 
 ✅ **Do**:
 - Use precise technical language
@@ -386,7 +408,7 @@ According to Knuth (1997), this approach...
 - Use third person or second person
 - Provide verifiable information
 - Maintain professional tone
-- **Use LaTeX delimiters for math** (`\( x \)` or `\[ x \]`)
+- **Use consistent math notation** (either `\(\)` / `\[\]` OR `$` / `$$`)
 
 ---
 
@@ -398,7 +420,7 @@ Before submitting:
 - [ ] Grammar check completed  
 - [ ] All links verified
 - [ ] All images load correctly
-- [ ] Math uses `\( \)` and `\[ \]` only (NO `$` or `$$`)
+- [ ] Math notation is consistent throughout (all `\(\)` / `\[\]` OR all `$` / `$$`)
 - [ ] Math renders properly in preview
 - [ ] Code examples tested
 - [ ] Consistent terminology
