@@ -2,26 +2,33 @@
 # Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Default owners for everything in the repository
-* @Moebius-Order
+# Replace with specific maintainer usernames or teams as needed
+* @ihelloeveryone
 
 # Templates - require review for template changes
-/templates/ @Moebius-Order
+/templates/ @ihelloeveryone
 
 # Documentation pillars - can assign specific pillar maintainers later
-/docs/foundations/ @Moebius-Order
-/docs/hardware/ @Moebius-Order
-/docs/software/ @Moebius-Order
-/docs/systems/ @Moebius-Order
+/docs/foundations/ @ihelloeveryone
+/docs/hardware/ @ihelloeveryone
+/docs/software/ @ihelloeveryone
+/docs/systems/ @ihelloeveryone
 
 # Repository configuration files
-/.github/ @Moebius-Order
-CONTRIBUTING.md @Moebius-Order
-CODE_OF_CONDUCT.md @Moebius-Order
-LICENSE @Moebius-Order
-README.md @Moebius-Order
+/.github/ @ihelloeveryone
+CONTRIBUTING.md @ihelloeveryone
+CODE_OF_CONDUCT.md @ihelloeveryone
+LICENSE @ihelloeveryone
+README.md @ihelloeveryone
 
-# Add specific topic maintainers as they emerge:
-# /docs/foundations/algorithms/ @algorithm-expert
-# /docs/hardware/digital-logic/ @hardware-expert
-# /docs/software/compilers/ @compiler-expert
+# To add organization teams (requires team creation first):
+# Syntax: @Moebius-Order/team-name
+# Example:
+# /docs/foundations/algorithms/ @Moebius-Order/algorithms-team @specific-user
+# /docs/hardware/digital-logic/ @Moebius-Order/hardware-team
+
+# To add additional maintainers:
+# Simply add their GitHub username with @ prefix
+# Example:
+# /docs/foundations/ @ihelloeveryone @another-maintainer
 # /docs/systems/networking/ @networking-expert
