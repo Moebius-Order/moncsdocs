@@ -19,7 +19,7 @@ status: "Published"
 ## The Core Concept
 > Binary search is a divide-and-conquer algorithm that finds the position of a target value within a **sorted array** by repeatedly dividing the search interval in half.
 
-## The "Why" (The Problem)
+## The Problem
 
 Searching for an element in a collection is one of the most fundamental operations in computing. Without efficient search algorithms:
 
@@ -68,7 +68,7 @@ Imagine searching for the word "computer" in a physical dictionary with 1,000 pa
 6. Eliminate pages 1-250, search pages 251-499
 7. Continue halving until found
 
-**Result**: Found in ~10 comparisons instead of potentially 1,000!
+**Result**: Found in approximately 10 comparisons instead of potentially 1,000.
 
 ---
 
@@ -361,7 +361,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ### Advantages
 
-1. **Efficient for large datasets**: \(O(\log n)\) means searching 1 million elements takes ~20 comparisons
+1. **Efficient for large datasets**: \(O(\log n)\) means searching 1 million elements takes approximately 20 comparisons
 2. **Simple to implement**: Core logic is straightforward once understood
 3. **Predictable performance**: Worst case is logarithmic, no surprises
 4. **Minimal space**: Iterative version uses \(O(1)\) extra space
@@ -487,7 +487,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 4. Developer tests and marks as good/bad
 5. Repeat until bug-introducing commit found
 
-**Result**: Find problematic commit in ~10 tests instead of 1000!
+**Result**: Find problematic commit in approximately 10 tests instead of 1000.
 
 ---
 
