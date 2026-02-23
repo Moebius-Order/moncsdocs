@@ -9,6 +9,7 @@
 *Comprehensive CS Theory Documentation — Beyond Code, Into Understanding*
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Platform Status](https://img.shields.io/badge/Platform%20Status-Live-brightgreen)](https://status.moebiusorder.com)
 [![Managed by Moebius Order](https://img.shields.io/badge/Managed%20by-Moebius%20Order-blue)](https://www.moebiusorder.com)
 [![Community](https://img.shields.io/badge/Community-Join%20Us-green)](https://t.me/moncsdocs)
 
@@ -283,7 +284,6 @@ MON CS DOCS is made possible by:
 
 Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-<img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/logo.png" alt="MON CS DOCS" width="100"/>
-<img src="https://moebiusorder.com/logo.png" alt="Moebius Order" width="100"/>
+<img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/logo.png" alt="MON CS DOCS" width="100"/> | <img src="https://moebiusorder.com/logo.png" alt="Moebius Order" width="100"/>
 
 </div>
