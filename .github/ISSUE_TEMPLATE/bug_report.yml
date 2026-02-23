@@ -1,0 +1,135 @@
+name: "🐞 Bug Report"
+description: Report an error, inaccuracy, or problem in documentation
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+assignees:
+  - Moebius-Order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for reporting a bug!
+        Please provide detailed information to help us fix the issue quickly.
+        
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Bug Type
+      description: What type of issue did you find?
+      options:
+        - Technical Inaccuracy
+        - Broken Link
+        - Formatting Error
+        - Missing Information
+        - Outdated Content
+        - Typo/Grammar
+        - Mathematical Error
+        - Code Example Error
+        - Diagram Issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: affected-file
+    attributes:
+      label: Affected File
+      description: "Path to the file with the issue (e.g., docs/foundations/algorithms/binary-search.md)"
+      placeholder: "docs/category/subcategory/file.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this affect?
+      options:
+        - Foundational Theory
+        - Hardware & Architecture
+        - Software Paradigms
+        - Systems & Networking
+        - Templates
+        - Repository Configuration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: Clear description of what is wrong
+      placeholder: "The explanation of time complexity is incorrect because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current (Incorrect) Content
+      description: Quote the problematic text or describe the issue
+      placeholder: |
+        Current text says:
+        "The algorithm runs in O(n²) time"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-content
+    attributes:
+      label: Expected (Correct) Content
+      description: What should it say instead?
+      placeholder: |
+        Should say:
+        "The algorithm runs in O(n log n) time"
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Supporting References
+      description: Links to authoritative sources (textbooks, papers, documentation)
+      placeholder: |
+        - Source 1: [URL]
+        - Source 2: [URL]
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How critical is this issue?
+      options:
+        - Critical (Fundamental error affecting learning)
+        - High (Significant inaccuracy)
+        - Medium (Minor error or unclear explanation)
+        - Low (Typo or formatting)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have verified this is actually incorrect (checked references)
+          required: true
+        - label: I am willing to submit a PR to fix this
+          required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that might help
+      placeholder: "This affects NCERT Class 11 students learning this topic..."
+    validations:
+      required: false
