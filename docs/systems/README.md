@@ -104,61 +104,61 @@ Systems & Networking explores how computers communicate and coordinate in connec
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| OSI Model | Beginner | 📚 Theory | Seven-layer network architecture | 📝 Planned |
-| TCP/IP Stack | Beginner | 📚 Theory | Internet protocol suite | 📝 Planned |
-| IP Addressing | Beginner | 🛠️ Practical | IPv4, IPv6, subnetting | 📝 Planned |
-| Routing Algorithms | Intermediate | 📚 Theory | Distance vector, link state | 📝 Planned |
-| DNS | Intermediate | 🛠️ Practical | Domain name system | 📝 Planned |
+| OSI Model | Beginner | Theory | Seven-layer network architecture | Planned |
+| TCP/IP Stack | Beginner | Theory | Internet protocol suite | Planned |
+| IP Addressing | Beginner | Practical | IPv4, IPv6, subnetting | Planned |
+| Routing Algorithms | Intermediate | Theory | Distance vector, link state | Planned |
+| DNS | Intermediate | Practical | Domain name system | Planned |
 
 ### Network Protocols
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| TCP Protocol | Intermediate | 📚 Theory | Reliable transport mechanism | 📝 Planned |
-| UDP Protocol | Beginner | 📚 Theory | Connectionless datagram service | 📝 Planned |
-| HTTP/HTTPS | Beginner | 🛠️ Practical | Web protocols | 📝 Planned |
-| WebSockets | Intermediate | 🛠️ Practical | Bidirectional communication | 📝 Planned |
-| gRPC | Advanced | 🛠️ Practical | RPC framework | 📝 Planned |
+| TCP Protocol | Intermediate | Theory | Reliable transport mechanism | Planned |
+| UDP Protocol | Beginner | Theory | Connectionless datagram service | Planned |
+| HTTP/HTTPS | Beginner | Practical | Web protocols | Planned |
+| WebSockets | Intermediate | Practical | Bidirectional communication | Planned |
+| gRPC | Advanced | Practical | RPC framework | Planned |
 
 ### Distributed Systems
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| CAP Theorem | Intermediate | 📚 Theory | Consistency-availability-partition trade-off | 📝 Planned |
-| Consensus Algorithms | Advanced | 🔬 Research | Paxos, Raft distributed agreement | 📝 Planned |
-| Consistency Models | Advanced | 📚 Theory | Strong, eventual, causal consistency | 📝 Planned |
-| Distributed Transactions | Advanced | 📚 Theory | Two-phase commit, SAGA pattern | 📝 Planned |
-| Replication Strategies | Advanced | 🛠️ Practical | Primary-backup, multi-master | 📝 Planned |
-| Load Balancing | Intermediate | 🛠️ Practical | Request distribution strategies | 📝 Planned |
-| Microservices | Intermediate | 🛠️ Practical | Service-oriented architecture | 📝 Planned |
+| CAP Theorem | Intermediate | Theory | Consistency-availability-partition trade-off | Planned |
+| Consensus Algorithms | Advanced | Research | Paxos, Raft distributed agreement | Planned |
+| Consistency Models | Advanced | Theory | Strong, eventual, causal consistency | Planned |
+| Distributed Transactions | Advanced | Theory | Two-phase commit, SAGA pattern | Planned |
+| Replication Strategies | Advanced | Practical | Primary-backup, multi-master | Planned |
+| Load Balancing | Intermediate | Practical | Request distribution strategies | Planned |
+| Microservices | Intermediate | Practical | Service-oriented architecture | Planned |
 
 ### Database Systems
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Relational Model | Beginner | 📚 Theory | Tables, relations, SQL | 📝 Planned |
-| Normalization | Intermediate | 📚 Theory | 1NF, 2NF, 3NF, BCNF | 📝 Planned |
-| ACID Properties | Intermediate | 📚 Theory | Atomicity, consistency, isolation, durability | 📝 Planned |
-| SQL Queries | Beginner | 🛠️ Practical | SELECT, JOIN, aggregations | 📝 Planned |
-| Indexing | Intermediate | 🛠️ Practical | B-tree, hash indexes | 📝 Planned |
-| Query Optimization | Advanced | 📚 Theory | Execution plans and cost estimation | 📝 Planned |
-| Transactions | Intermediate | 🎯 Interview | Concurrency control, isolation levels | 📝 Planned |
-| NoSQL Databases | Intermediate | 🛠️ Practical | Key-value, document, column, graph stores | 📝 Planned |
-| Database Sharding | Advanced | 🛠️ Practical | Horizontal partitioning | 📝 Planned |
+| Relational Model | Beginner | Theory | Tables, relations, SQL | Planned |
+| Normalization | Intermediate | Theory | 1NF, 2NF, 3NF, BCNF | Planned |
+| ACID Properties | Intermediate | Theory | Atomicity, consistency, isolation, durability | Planned |
+| SQL Queries | Beginner | Practical | SELECT, JOIN, aggregations | Planned |
+| Indexing | Intermediate | Practical | B-tree, hash indexes | Planned |
+| Query Optimization | Advanced | Theory | Execution plans and cost estimation | Planned |
+| Transactions | Intermediate | Interview | Concurrency control, isolation levels | Planned |
+| NoSQL Databases | Intermediate | Practical | Key-value, document, column, graph stores | Planned |
+| Database Sharding | Advanced | Practical | Horizontal partitioning | Planned |
 
 ### Security Fundamentals
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Cryptography Basics | Intermediate | 📚 Theory | Encryption, decryption, keys | 📝 Planned |
-| Symmetric Encryption | Intermediate | 📚 Theory | AES, DES, shared key crypto | 📝 Planned |
-| Asymmetric Encryption | Intermediate | 📚 Theory | RSA, public-private key pairs | 📝 Planned |
-| Hashing | Beginner | 🛠️ Practical | SHA, MD5, password hashing | 📝 Planned |
-| Digital Signatures | Advanced | 📚 Theory | Authentication and non-repudiation | 📝 Planned |
-| TLS/SSL | Intermediate | 🛠️ Practical | Secure communication protocols | 📝 Planned |
-| Authentication | Intermediate | 🛠️ Practical | Passwords, tokens, OAuth, JWT | 📝 Planned |
-| Access Control | Intermediate | 📚 Theory | RBAC, ABAC, MAC, DAC | 📝 Planned |
-| Web Security | Advanced | 🎯 Interview | XSS, CSRF, SQL injection, OWASP Top 10 | 📝 Planned |
+| Cryptography Basics | Intermediate | Theory | Encryption, decryption, keys | Planned |
+| Symmetric Encryption | Intermediate | Theory | AES, DES, shared key crypto | Planned |
+| Asymmetric Encryption | Intermediate | Theory | RSA, public-private key pairs | Planned |
+| Hashing | Beginner | Practical | SHA, MD5, password hashing | Planned |
+| Digital Signatures | Advanced | Theory | Authentication and non-repudiation | Planned |
+| TLS/SSL | Intermediate | Practical | Secure communication protocols | Planned |
+| Authentication | Intermediate | Practical | Passwords, tokens, OAuth, JWT | Planned |
+| Access Control | Intermediate | Theory | RBAC, ABAC, MAC, DAC | Planned |
+| Web Security | Advanced | Interview | XSS, CSRF, SQL injection, OWASP Top 10 | Planned |
 
 ---
 
@@ -222,7 +222,7 @@ Systems & Networking explores how computers communicate and coordinate in connec
 
 <div align="center">
 
-**[⬅️ Back to Main Documentation](../../README.md)** | **[📁 Browse All Categories](../../docs/)** | **[📚 Contributing Guide](../../CONTRIBUTING.md)**
+**[Back to Main Documentation](../../README.md)** | **[Browse All Categories](../../docs/)** | **[Contributing Guide](../../CONTRIBUTING.md)**
 
 Part of [MON CS DOCS](../../README.md) | Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
