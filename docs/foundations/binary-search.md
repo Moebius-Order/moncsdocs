@@ -16,10 +16,10 @@ status: "Published"
 
 # Binary Search
 
-## 🎯 The Core Concept
+## The Core Concept
 > Binary search is a divide-and-conquer algorithm that finds the position of a target value within a **sorted array** by repeatedly dividing the search interval in half.
 
-## 🧩 The "Why" (The Problem)
+## The "Why" (The Problem)
 
 Searching for an element in a collection is one of the most fundamental operations in computing. Without efficient search algorithms:
 
@@ -33,7 +33,7 @@ Binary search solves this by exploiting a key property: **if the data is sorted,
 
 ---
 
-## 📜 Historical Context
+## Historical Context
 
 ### Origin
 - **When**: First published in 1946
@@ -48,7 +48,7 @@ Though conceptually simple, the first correct implementation of binary search wa
 
 ---
 
-## 💡 Motivating Example
+## Motivating Example
 
 ### The Scenario: Dictionary Lookup
 
@@ -72,7 +72,7 @@ Imagine searching for the word "computer" in a physical dictionary with 1,000 pa
 
 ---
 
-## ⚙️ How it Works (The Logic)
+## How it Works (The Logic)
 
 Binary search maintains three pointers: **left**, **right**, and **middle**, defining the current search range.
 
@@ -109,7 +109,7 @@ Binary search maintains three pointers: **left**, **right**, and **middle**, def
 
 ---
 
-## 📐 Visual Representation
+## Visual Representation
 
 ### Search Process Visualization
 
@@ -143,7 +143,7 @@ Return index 5
 
 ---
 
-## 📊 Mathematical & Logical Formalization
+## Mathematical & Logical Formalization
 
 ### Formal Definition
 
@@ -182,7 +182,7 @@ Proof: Each iteration halves the search space, leading to logarithmic depth.
 
 ---
 
-## 🛠️ Worked Example
+## Worked Example
 
 ### Complete Walkthrough
 
@@ -214,7 +214,7 @@ Proof: Each iteration halves the search space, leading to logarithmic depth.
 
 ---
 
-## 💻 Practical Examples
+## Practical Examples
 
 ### 1. Simple Implementation (Iterative)
 
@@ -302,7 +302,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## 🔄 Variations & Extensions
+## Variations & Extensions
 
 ### 1. Lower Bound / Upper Bound
 - **Lower Bound**: First position where element ≥ target
@@ -331,7 +331,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## ⚠️ Common Misconceptions
+## Common Misconceptions
 
 ### Misconception 1: "Binary search works on unsorted arrays"
 
@@ -357,7 +357,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## ✅ Advantages & Limitations
+## Advantages & Limitations
 
 ### Advantages
 
@@ -392,7 +392,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## ⚖️ Comparison with Similar Concepts
+## Comparison with Similar Concepts
 
 ### Binary Search vs Linear Search vs Hash Table
 
@@ -406,7 +406,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## 🎯 Practice & Exercises
+## Practice & Exercises
 
 ### Conceptual Questions
 
@@ -452,7 +452,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## 🌐 Real-World Application
+## Real-World Application
 
 ### Where Binary Search is Used
 
@@ -491,7 +491,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## 🔗 Related Theory
+## Related Theory
 
 ### Prerequisites
 - [Arrays](./arrays.md) - Understanding array indexing and access
@@ -511,7 +511,7 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 ---
 
-## 📚 Further Reading
+## Further Reading
 
 ### Academic Resources
 
@@ -544,12 +544,12 @@ print(f"First occurrence at index: {pos}")  # Output: 1
 
 <div align="center">
 
-**[⬅️ Back to Foundational Theory](./README.md)** | **[📁 View All Topics](../README.md)** | **[Report Issue ℹ️](../../issues/new?template=bug_report.md)**
+**[Back to Foundational Theory](./README.md)** | **[View All Topics](../README.md)** | **[Report Issue](../../issues/new?template=bug_report.md)**
 
 ---
 
 Part of [MON CS DOCS](../../README.md) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-If you found this helpful, ⭐ [star the repo](https://github.com/Moebius-Order/moncsdocs)!
+If you found this helpful, star the [repository](https://github.com/Moebius-Order/moncsdocs)!
 
 </div>
