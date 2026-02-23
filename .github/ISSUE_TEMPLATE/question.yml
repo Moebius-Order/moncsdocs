@@ -1,0 +1,83 @@
+name: "❓ Question"
+description: Ask a question about content or concepts
+title: "[QUESTION]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ask a Question
+        
+        **Note**: For quick questions, consider using our community channels:
+        - [Telegram Chat](https://t.me/moncsdocschat)
+        - [Discord Server](https://discord.gg/yb6XgkhBXU)
+        
+        Use this form for questions that may help improve documentation.
+        
+  - type: input
+    id: related-file
+    attributes:
+      label: Related Documentation File
+      description: "Which file is your question about? (if applicable)"
+      placeholder: "docs/systems/networks/tcp-protocol.md"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: Question Type
+      options:
+        - Clarification on Concept
+        - How to Apply This
+        - Why This Works
+        - Comparison with Similar Concept
+        - Real-world Usage
+        - Prerequisites Unclear
+        - Mathematical Notation Confusion
+        - General Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "I don't understand why TCP uses a three-way handshake instead of a two-way handshake. What problem does the third step solve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-you-tried
+    attributes:
+      label: What Have You Tried?
+      description: What have you already read or attempted to understand?
+      placeholder: |
+        - Read the TCP article
+        - Searched online but found conflicting explanations
+        - Still confused about the ACK sequence
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Background that might help us answer
+      placeholder: "I'm a sophomore CS student learning networking for the first time."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: documentation-improvement
+    attributes:
+      label: Documentation Improvement
+      description: Could this indicate a gap in our documentation?
+      options:
+        - label: This suggests the documentation could be clearer
+          required: false
+        - label: This topic might need more examples
+          required: false
+        - label: A diagram might help explain this better
+          required: false

@@ -1,0 +1,93 @@
+name: "📝 Content Improvement"
+description: Suggest improvements to existing documentation
+title: "[IMPROVE]: "
+labels: ["improvement", "documentation"]
+assignees:
+  - Moebius-Order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest Improvements to Existing Content
+        Help us make our documentation clearer and more useful.
+        
+  - type: input
+    id: file-path
+    attributes:
+      label: File to Improve
+      description: "Path to the documentation file"
+      placeholder: "docs/foundations/algorithms/quicksort.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: improvement-type
+    attributes:
+      label: Type of Improvement
+      description: What aspect needs improvement?
+      options:
+        - Clarity/Explanation
+        - Add More Examples
+        - Add Diagrams
+        - Expand Theory Section
+        - Add Practical Applications
+        - Update Prerequisites
+        - Improve Complexity Analysis
+        - Add References
+        - Better Code Examples
+        - Reorganize Structure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What currently exists that could be better?
+      placeholder: "The explanation of the partition step is too brief and doesn't explain why..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested Improvement
+      description: How should it be improved?
+      placeholder: |
+        Add a detailed walkthrough of the partition step with:
+        1. Visual diagram showing array transformations
+        2. Step-by-step explanation of pivot selection
+        3. Example with actual numbers
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefit to Learners
+      description: How will this help students understand better?
+      placeholder: "This would help beginners visualize the partition process, which is often the most confusing part."
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-content
+    attributes:
+      label: Example Content (Optional)
+      description: Draft of improved content if you have one
+      render: markdown
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-offer
+    attributes:
+      label: Can You Help?
+      options:
+        - label: I can write the improved content
+          required: false
+        - label: I can create the diagrams
+          required: false
+        - label: I can review the changes
+          required: false

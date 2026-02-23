@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Chat (Telegram)
+    url: https://t.me/moncsdocschat
+    about: Ask questions and discuss with the community
+  - name: 💬 Discord Server
+    url: https://discord.gg/yb6XgkhBXU
+    about: Real-time collaboration and discussions
+  - name: 📖 Documentation Website
+    url: https://mcdocs.moebiusorder.com
+    about: Browse the full documentation
+  - name: 🎨 Media Repository
+    url: https://github.com/Moebius-Order/moncsdocs-media
+    about: Contribute diagrams and visual assets
+  - name: 💰 Support the Project
+    url: https://mcdocs.moebiusorder.com/donate
+    about: Help us maintain free, ad-free education
