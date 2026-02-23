@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/logo.png" alt="MON CS DOCS Logo" width="200"/>
+<img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/banner.png" alt="MON CS DOCS" width="800"/>
 
 # MON CS DOCS
 
@@ -282,5 +282,7 @@ MON CS DOCS is made possible by:
 **Built with dedication by the global CS community**
 
 Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+<img src="https://moebiusordernewsalternate.netlify.app/data/images/b2/logo.png" alt="MON CS DOCS" width="100"/>
 
 </div>
