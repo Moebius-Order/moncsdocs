@@ -118,9 +118,9 @@ Understand the mathematical theory of information and communication.
 29. **Cryptography Fundamentals** - Mathematical foundations of security
 
 **Alternative Learning Paths**:
-- **For Practitioners** 🛠️: Focus on Phases 2-3 (algorithms and data structures)
-- **For Researchers** 🔬: Emphasize Phases 4-5 (computational and information theory)
-- **For Interview Prep** 🎯: Master Phases 2-3 with emphasis on problem-solving patterns
+- **For Practitioners**: Focus on Phases 2-3 (algorithms and data structures)
+- **For Researchers**: Emphasize Phases 4-5 (computational and information theory)
+- **For Interview Prep**: Master Phases 2-3 with emphasis on problem-solving patterns
 
 ---
 
@@ -130,74 +130,74 @@ Understand the mathematical theory of information and communication.
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Discrete Mathematics | Beginner | 📚 Theory | Sets, logic, proofs, counting, and number theory | 📝 Planned |
-| Mathematical Induction | Beginner | 📚 Theory | Proof by induction and strong induction | 📝 Planned |
-| Graph Theory | Intermediate | 📚 Theory | Graphs, trees, paths, connectivity | 📝 Planned |
-| Combinatorics | Intermediate | 📚 Theory | Permutations, combinations, pigeonhole principle | 📝 Planned |
-| Probability Theory | Intermediate | 📚 Theory | Discrete probability for algorithm analysis | 📝 Planned |
+| Discrete Mathematics | Beginner | Theory | Sets, logic, proofs, counting, and number theory | Planned |
+| Mathematical Induction | Beginner | Theory | Proof by induction and strong induction | Planned |
+| Graph Theory | Intermediate | Theory | Graphs, trees, paths, connectivity | Planned |
+| Combinatorics | Intermediate | Theory | Permutations, combinations, pigeonhole principle | Planned |
+| Probability Theory | Intermediate | Theory | Discrete probability for algorithm analysis | Planned |
 
 ### Data Structures
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Arrays & Strings | Beginner | 🛠️ Practical | Contiguous memory structures and operations | 📝 Planned |
-| Linked Lists | Beginner | 🛠️ Practical | Dynamic linear data structures | 📝 Planned |
-| Stacks | Beginner | 🛠️ Practical | LIFO data structure and applications | 📝 Planned |
-| Queues | Beginner | 🛠️ Practical | FIFO data structure and variations | 📝 Planned |
-| Hash Tables | Intermediate | 🛠️ Practical | Hash functions and collision resolution | 📝 Planned |
-| Binary Trees | Intermediate | 📚 Theory | Tree structure and traversals | 📝 Planned |
-| Binary Search Trees | Intermediate | 🛠️ Practical | Ordered tree structure with search operations | 📝 Planned |
-| Heaps | Intermediate | 🛠️ Practical | Priority queue implementation | 📝 Planned |
-| AVL Trees | Advanced | 📚 Theory | Self-balancing binary search trees | 📝 Planned |
-| Red-Black Trees | Advanced | 📚 Theory | Balanced BST with color properties | 📝 Planned |
-| B-Trees | Advanced | 🛠️ Practical | Multi-way search trees for databases | 📝 Planned |
-| Tries | Advanced | 🛠️ Practical | Prefix trees for string operations | 📝 Planned |
-| Segment Trees | Advanced | 🛠️ Practical | Range query data structures | 📝 Planned |
+| Arrays & Strings | Beginner | Practical | Contiguous memory structures and operations | Planned |
+| Linked Lists | Beginner | Practical | Dynamic linear data structures | Planned |
+| Stacks | Beginner | Practical | LIFO data structure and applications | Planned |
+| Queues | Beginner | Practical | FIFO data structure and variations | Planned |
+| Hash Tables | Intermediate | Practical | Hash functions and collision resolution | Planned |
+| Binary Trees | Intermediate | Theory | Tree structure and traversals | Planned |
+| Binary Search Trees | Intermediate | Practical | Ordered tree structure with search operations | Planned |
+| Heaps | Intermediate | Practical | Priority queue implementation | Planned |
+| AVL Trees | Advanced | Theory | Self-balancing binary search trees | Planned |
+| Red-Black Trees | Advanced | Theory | Balanced BST with color properties | Planned |
+| B-Trees | Advanced | Practical | Multi-way search trees for databases | Planned |
+| Tries | Advanced | Practical | Prefix trees for string operations | Planned |
+| Segment Trees | Advanced | Practical | Range query data structures | Planned |
 
 ### Algorithms
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Algorithm Analysis | Beginner | 📚 Theory | Time and space complexity, Big-O notation | 📝 Planned |
-| Recursion | Beginner | 🛠️ Practical | Recursive problem solving techniques | 📝 Planned |
-| Sorting: Bubble Sort | Beginner | 🛠️ Practical | Simple comparison-based sorting | 📝 Planned |
-| Sorting: Merge Sort | Intermediate | 🛠️ Practical | Divide-and-conquer sorting algorithm | 📝 Planned |
-| Sorting: Quick Sort | Intermediate | 🛠️ Practical | Efficient comparison-based sorting | 📝 Planned |
-| Sorting: Heap Sort | Intermediate | 🛠️ Practical | Heap-based sorting algorithm | 📝 Planned |
-| Binary Search | Beginner | 🎯 Interview | Efficient searching in sorted arrays | 📝 Planned |
-| Graph Traversal: DFS | Intermediate | 🛠️ Practical | Depth-first search algorithm | 📝 Planned |
-| Graph Traversal: BFS | Intermediate | 🛠️ Practical | Breadth-first search algorithm | 📝 Planned |
-| Dijkstra's Algorithm | Advanced | 🛠️ Practical | Shortest path in weighted graphs | 📝 Planned |
-| Dynamic Programming | Advanced | 🎯 Interview | Optimization through memoization | 📝 Planned |
-| Greedy Algorithms | Intermediate | 📚 Theory | Local optimization strategies | 📝 Planned |
+| Algorithm Analysis | Beginner | Theory | Time and space complexity, Big-O notation | Planned |
+| Recursion | Beginner | Practical | Recursive problem solving techniques | Planned |
+| Sorting: Bubble Sort | Beginner | Practical | Simple comparison-based sorting | Planned |
+| Sorting: Merge Sort | Intermediate | Practical | Divide-and-conquer sorting algorithm | Planned |
+| Sorting: Quick Sort | Intermediate | Practical | Efficient comparison-based sorting | Planned |
+| Sorting: Heap Sort | Intermediate | Practical | Heap-based sorting algorithm | Planned |
+| Binary Search | Beginner | Interview | Efficient searching in sorted arrays | Planned |
+| Graph Traversal: DFS | Intermediate | Practical | Depth-first search algorithm | Planned |
+| Graph Traversal: BFS | Intermediate | Practical | Breadth-first search algorithm | Planned |
+| Dijkstra's Algorithm | Advanced | Practical | Shortest path in weighted graphs | Planned |
+| Dynamic Programming | Advanced | Interview | Optimization through memoization | Planned |
+| Greedy Algorithms | Intermediate | Theory | Local optimization strategies | Planned |
 
 ### Computational Theory
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Finite Automata | Intermediate | 📚 Theory | DFA and NFA models of computation | 📝 Planned |
-| Regular Expressions | Intermediate | 🛠️ Practical | Pattern matching with regular languages | 📝 Planned |
-| Context-Free Grammars | Advanced | 📚 Theory | Formal grammar for programming languages | 📝 Planned |
-| Turing Machines | Advanced | 📚 Theory | Universal model of computation | 📝 Planned |
-| Computability | Advanced | 🔬 Research | Decidability and the halting problem | 📝 Planned |
-| P vs NP | Advanced | 🔬 Research | Complexity classes and open problems | 📝 Planned |
-| NP-Completeness | Advanced | 📚 Theory | Hardest problems in NP class | 📝 Planned |
+| Finite Automata | Intermediate | Theory | DFA and NFA models of computation | Planned |
+| Regular Expressions | Intermediate | Practical | Pattern matching with regular languages | Planned |
+| Context-Free Grammars | Advanced | Theory | Formal grammar for programming languages | Planned |
+| Turing Machines | Advanced | Theory | Universal model of computation | Planned |
+| Computability | Advanced | Research | Decidability and the halting problem | Planned |
+| P vs NP | Advanced | Research | Complexity classes and open problems | Planned |
+| NP-Completeness | Advanced | Theory | Hardest problems in NP class | Planned |
 
 ### Information Theory
 
 | Topic | Difficulty | Type | Description | Status |
 |:------|:-----------|:-----|:------------|:-------|
-| Information Entropy | Intermediate | 📚 Theory | Measuring information content | 📝 Planned |
-| Huffman Coding | Intermediate | 🛠️ Practical | Optimal prefix-free encoding | 📝 Planned |
-| Data Compression | Intermediate | 🛠️ Practical | Lossless compression techniques | 📝 Planned |
-| Error Detection | Advanced | 🛠️ Practical | Parity, checksums, CRC | 📝 Planned |
-| Cryptography Basics | Advanced | 📚 Theory | Mathematical foundations of encryption | 📝 Planned |
+| Information Entropy | Intermediate | Theory | Measuring information content | Planned |
+| Huffman Coding | Intermediate | Practical | Optimal prefix-free encoding | Planned |
+| Data Compression | Intermediate | Practical | Lossless compression techniques | Planned |
+| Error Detection | Advanced | Practical | Parity, checksums, CRC | Planned |
+| Cryptography Basics | Advanced | Theory | Mathematical foundations of encryption | Planned |
 
 **Status Legend**:
-- ✅ **Complete**: Fully written, reviewed, and published
-- 🚧 **In Progress**: Currently being written or under revision
-- 📝 **Planned**: Outlined and scheduled for creation
-- ❌ **Not Started**: Identified but not yet begun
+- **Complete**: Fully written, reviewed, and published
+- **In Progress**: Currently being written or under revision
+- **Planned**: Outlined and scheduled for creation
+- **Not Started**: Identified but not yet begun
 
 ---
 
@@ -293,7 +293,7 @@ Foundational Theory is the starting point for all Computer Science study.
 - Competitive Programmer
 - Technical Interviewer
 
-**Interview Relevance**: 🎯
+**Interview Relevance**:
 Foundational theory is the most commonly tested area in technical interviews.
 
 ---
@@ -330,7 +330,7 @@ All contributions licensed under [CC BY-SA 4.0](https://creativecommons.org/lice
 
 <div align="center">
 
-**[⬅️ Back to Main Documentation](../../README.md)** | **[📁 Browse All Categories](../../docs/)** | **[📚 Contributing Guide](../../CONTRIBUTING.md)**
+**[Back to Main Documentation](../../README.md)** | **[Browse All Categories](../../docs/)** | **[Contributing Guide](../../CONTRIBUTING.md)**
 
 Part of [MON CS DOCS](../../README.md) | Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
