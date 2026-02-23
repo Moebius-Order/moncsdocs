@@ -18,7 +18,7 @@
 
 ---
 
-## 📚 Project Overview
+## Project Overview
 
 **MON CS DOCS** is an open-source, community-driven Computer Science documentation platform that emphasizes **theoretical foundations** over code tutorials. We believe understanding *why* systems work is as important as knowing *how* to implement them.
 
@@ -39,29 +39,33 @@ This project is managed and maintained by **[Moebius Order](https://www.moebiuso
 
 ---
 
-## 🗺️ Knowledge Pillars
+## Knowledge Pillars
 
 Our documentation is organized into four fundamental pillars of Computer Science:
 
-### 🧮 Foundational Theory
+### Foundational Theory
+
 - **Mathematics for CS**: Discrete mathematics, logic, set theory, graph theory
 - **Algorithms & Data Structures**: Complexity analysis, algorithmic paradigms, advanced data structures
 - **Computational Theory**: Automata, formal languages, computability, complexity classes
 - **Information Theory**: Encoding, compression, cryptography fundamentals
 
-### 🔧 Hardware & Architecture
+### Hardware & Architecture
+
 - **Digital Logic**: Boolean algebra, combinational and sequential circuits
 - **Computer Organization**: CPU architecture, memory hierarchy, instruction sets
 - **Embedded Systems**: Microcontrollers, real-time systems, hardware-software interface
 - **Performance Engineering**: Optimization techniques, benchmarking, profiling
 
-### 💻 Software Paradigms
+### Software Paradigms
+
 - **Programming Principles**: Paradigms (procedural, OOP, functional, declarative)
 - **Software Engineering**: Design patterns, testing methodologies, SDLC models
 - **Compilers & Languages**: Lexical analysis, parsing, code generation, type systems
 - **Operating Systems**: Process management, memory management, file systems, concurrency
 
-### 🌐 Systems & Networking
+### Systems & Networking
+
 - **Network Theory**: OSI model, protocols (TCP/IP, HTTP, DNS), network security
 - **Distributed Systems**: Consensus algorithms, CAP theorem, distributed databases
 - **Database Systems**: Relational theory, normalization, query optimization, NoSQL
@@ -69,9 +73,9 @@ Our documentation is organized into four fundamental pillars of Computer Science
 
 ---
 
-## ⚖️ Project Duality: Open Content, Private Infrastructure
+## Project Duality: Open Content, Private Infrastructure
 
-### 📖 Open Source Content
+### Open Source Content
 
 All educational content in this repository is licensed under **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**. You are free to:
 
@@ -80,11 +84,13 @@ All educational content in this repository is licensed under **[CC BY-SA 4.0](ht
 - Contribute improvements via Pull Requests
 - Fork and create derivative educational materials
 
-**What you can edit**: Markdown files, documentation content, diagrams, examples, and educational materials.
+> **What you can edit**: Markdown files, documentation content, diagrams, examples, and educational materials.
 
-### 🔒 Private Engine
+### Private Engine
 
-**Important Distinction**: While the *content* is open source, the **Moebius Order platform infrastructure**, including:
+> **Important Distinction**: While the *content* is open source, the **Moebius Order platform infrastructure** remains **private and proprietary**.
+
+This includes:
 
 - Web application codebase
 - Mobile application source code
@@ -92,9 +98,9 @@ All educational content in this repository is licensed under **[CC BY-SA 4.0](ht
 - Proprietary rendering engines
 - Internal tooling and automation
 
-...remains **private and proprietary**. This repository serves as the content data center, not the application source code.
+This repository serves as the content data center, not the application source code.
 
-### 🎨 Media Assets
+### Media Assets
 
 All visual resources (images, diagrams, illustrations, SVGs) are maintained in a separate repository:
 
@@ -104,9 +110,9 @@ Media contributions follow the same CC BY-SA 4.0 license with additional contrib
 
 ---
 
-## 🤝 Contribution Protocol
+## Contribution Protocol
 
-We welcome contributions from the global CS community! Your expertise helps make education accessible to everyone.
+We welcome contributions from the global CS community. Your expertise helps make education accessible to everyone.
 
 ### How to Contribute
 
@@ -133,13 +139,13 @@ We welcome contributions from the global CS community! Your expertise helps make
 - Diagrams and visual explanations
 - Translations (future roadmap)
 
-### Licensing Consent Reminder
+### Licensing Consent
 
-All contributions are automatically licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. You must have the legal right to contribute your content under these terms.
+> All contributions are automatically licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. You must have the legal right to contribute your content under these terms.
 
 ---
 
-## 💰 Funding & Sponsorship
+## Funding & Sponsorship
 
 **MON CS DOCS is completely free** — no ads, no premium tiers, no paywalls.
 
@@ -147,15 +153,17 @@ To sustain and grow this project, we rely on community support.
 
 ### How Funds Are Used
 
-- **🎨 Professional Illustrations**: Commissioning high-quality diagrams and visual aids
-- **🌐 Hosting & Infrastructure**: Server costs, CDN, domain registration
-- **🔧 Development**: Platform improvements and new features
-- **📝 Content Creation**: Supporting contributors and technical writers
-- **🛡️ Security & Maintenance**: Ensuring reliability and data integrity
+| Category | Description |
+|----------|-------------|
+| **Professional Illustrations** | Commissioning high-quality diagrams and visual aids |
+| **Hosting & Infrastructure** | Server costs, CDN, domain registration |
+| **Development** | Platform improvements and new features |
+| **Content Creation** | Supporting contributors and technical writers |
+| **Security & Maintenance** | Ensuring reliability and data integrity |
 
 ### Support MON CS DOCS
 
-Click the **❤️ Sponsor** button at the top of this repository, or visit:
+Click the **Sponsor** button at the top of this repository, or visit:
 
 - **Website Donation Page**: [mcdocs.moebiusorder.com/donate](https://mcdocs.moebiusorder.com/donate)
 - **Patreon**: [patreon.com/moebius_order](https://patreon.com/moebius_order)
@@ -166,14 +174,14 @@ Every contribution, no matter how small, helps us maintain ad-free, high-quality
 
 ---
 
-## 🌍 Community & Support
+## Community & Support
 
 Join our growing community of learners, educators, and contributors:
 
-- **📱 Telegram Channel**: [t.me/moncsdocs](https://t.me/moncsdocs) — Announcements and updates
-- **💬 Telegram Chat**: [t.me/moncsdocschat](https://t.me/moncsdocschat) — Discussion and questions
-- **🎮 Discord Server**: [discord.gg/yb6XgkhBXU](https://discord.gg/yb6XgkhBXU) — Real-time collaboration
-- **🗨️ Reddit**: [r/moncsdocs](https://www.reddit.com/r/moncsdocs) — Long-form discussions
+- **Telegram Channel**: [t.me/moncsdocs](https://t.me/moncsdocs) — Announcements and updates
+- **Telegram Chat**: [t.me/moncsdocschat](https://t.me/moncsdocschat) — Discussion and questions
+- **Discord Server**: [discord.gg/yb6XgkhBXU](https://discord.gg/yb6XgkhBXU) — Real-time collaboration
+- **Reddit**: [r/moncsdocs](https://www.reddit.com/r/moncsdocs) — Long-form discussions
 
 ### Contact
 
@@ -183,7 +191,7 @@ Join our growing community of learners, educators, and contributors:
 
 ---
 
-## 📜 License & Copyright
+## License & Copyright
 
 ### Content License
 
@@ -207,7 +215,7 @@ For full license terms, see [LICENSE](LICENSE) or visit [mcsdocs.moebiusorder.co
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### For Learners
 
@@ -239,7 +247,7 @@ git push origin feature/your-topic
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 moncsdocs/
@@ -258,7 +266,7 @@ moncsdocs/
 
 ---
 
-## 🌟 Acknowledgments
+## Acknowledgments
 
 MON CS DOCS is made possible by:
 
@@ -271,7 +279,7 @@ MON CS DOCS is made possible by:
 
 <div align="center">
 
-**Built with ❤️ by the global CS community**
+**Built with dedication by the global CS community**
 
 Managed by [Moebius Order](https://www.moebiusorder.com) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
