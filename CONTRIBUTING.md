@@ -264,7 +264,7 @@ Brief description of what this PR adds or changes.
 - [ ] Content is technically accurate
 - [ ] Writing follows style guide
 - [ ] All links are functional
-- [ ] Mathematical notation uses \( \) and \[ \] only (never $ or $$)
+- [ ] Mathematical notation uses supported formats (see style guide)
 - [ ] Examples are tested and correct
 - [ ] Citations provided for non-original content
 - [ ] Commit messages are descriptive
@@ -346,37 +346,42 @@ For detailed style guidelines, see [templates/style-guide.md](templates/style-gu
 
 #### Mathematical Notation
 
-**CRITICAL RULE**: Always use LaTeX-style delimiters compatible with our rendering engine.
+**Supported Formats**: We support multiple LaTeX-style delimiters for mathematical expressions.
 
-- **Inline Math**: Use `\( ... \)` for inline expressions
-  - ✅ Correct: `The complexity is \( O(n \log n) \).`
-  - ❌ Wrong: `The complexity is $O(n \log n)$.`
-  - ❌ Wrong: `The complexity is $$O(n \log n)$$.`
+**Inline Math** (within sentences):
+- ✅ Option 1: `\( O(n \log n) \)` → Renders as \( O(n \log n) \)
+- ✅ Option 2: `$O(n \log n)$` → Renders as $O(n \log n)$
 
-- **Block (Display) Math**: Use `\[ ... \]` for centered equations
-  - ✅ Correct:
-    ```
-    \[
-    f(n) = \sum_{i=1}^{n} i
-    \]
-    ```
-  - ❌ Wrong:
-    ```
-    $$
-    f(n) = \sum_{i=1}^{n} i
-    $$
-    ```
+**Block (Display) Math** (centered equations):
+- ✅ Option 1:
+  ```
+  \[
+  f(n) = \sum_{i=1}^{n} i
+  \]
+  ```
+- ✅ Option 2:
+  ```
+  $$
+  f(n) = \sum_{i=1}^{n} i
+  $$
+  ```
 
-**Why This Matters**:
-- Dollar signs (`$` and `$$`) are NOT supported by our rendering system
-- Using `$` or `$$` will break mathematical expressions on the platform
-- Our CI/CD workflow validates this and will flag violations
-- Always use `\(` and `\)` for inline, `\[` and `\]` for block equations
+**Best Practices**:
+- Use consistent notation throughout a single article
+- Either style is acceptable, but don't mix both in the same document
+- Test rendering in preview before submitting
+- Ensure all braces, subscripts, and superscripts are properly formatted
 
-**Common Mistakes to Avoid**:
-- ❌ Single dollar signs: `$x^2$` → Use `\( x^2 \)` instead
-- ❌ Double dollar signs: `$$E = mc^2$$` → Use `\[ E = mc^2 \]` instead
-- ❌ Mixed usage: Don't mix `$` with `\(` in the same document
+**Examples**:
+```markdown
+The time complexity is \( O(n^2) \) in the worst case.
+The time complexity is $O(n^2)$ in the worst case.
+
+The summation formula:
+$$
+S = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+```
 
 #### Lists
 
