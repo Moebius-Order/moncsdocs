@@ -194,7 +194,7 @@ We provide templates to ensure consistency across all documentation:
 - ✅ Content follows our [templates](templates/)
 - ✅ Writing adheres to [style guide](templates/style-guide.md)
 - ✅ All code examples are tested and functional
-- ✅ Mathematical notation renders correctly
+- ✅ Mathematical notation renders correctly (see below)
 - ✅ Links to other pages work correctly
 - ✅ Images are hosted on [moncsdocs-media CDN](https://github.com/Moebius-Order/moncsdocs-media)
 
@@ -264,7 +264,7 @@ Brief description of what this PR adds or changes.
 - [ ] Content is technically accurate
 - [ ] Writing follows style guide
 - [ ] All links are functional
-- [ ] Mathematical notation renders correctly
+- [ ] Mathematical notation uses \( \) and \[ \] only (never $ or $$)
 - [ ] Examples are tested and correct
 - [ ] Citations provided for non-original content
 - [ ] Commit messages are descriptive
@@ -346,9 +346,37 @@ For detailed style guidelines, see [templates/style-guide.md](templates/style-gu
 
 #### Mathematical Notation
 
-- **Inline**: Use `\( \)` for inline math: `\( O(n) \)`
-- **Block**: Use `\[ \]` for display math: `\[ E = mc^2 \]`
-- **Never use**: `$` or `$$` (incompatible with our rendering)
+**CRITICAL RULE**: Always use LaTeX-style delimiters compatible with our rendering engine.
+
+- **Inline Math**: Use `\( ... \)` for inline expressions
+  - ✅ Correct: `The complexity is \( O(n \log n) \).`
+  - ❌ Wrong: `The complexity is $O(n \log n)$.`
+  - ❌ Wrong: `The complexity is $$O(n \log n)$$.`
+
+- **Block (Display) Math**: Use `\[ ... \]` for centered equations
+  - ✅ Correct:
+    ```
+    \[
+    f(n) = \sum_{i=1}^{n} i
+    \]
+    ```
+  - ❌ Wrong:
+    ```
+    $$
+    f(n) = \sum_{i=1}^{n} i
+    $$
+    ```
+
+**Why This Matters**:
+- Dollar signs (`$` and `$$`) are NOT supported by our rendering system
+- Using `$` or `$$` will break mathematical expressions on the platform
+- Our CI/CD workflow validates this and will flag violations
+- Always use `\(` and `\)` for inline, `\[` and `\]` for block equations
+
+**Common Mistakes to Avoid**:
+- ❌ Single dollar signs: `$x^2$` → Use `\( x^2 \)` instead
+- ❌ Double dollar signs: `$$E = mc^2$$` → Use `\[ E = mc^2 \]` instead
+- ❌ Mixed usage: Don't mix `$` with `\(` in the same document
 
 #### Lists
 

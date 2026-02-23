@@ -185,6 +185,8 @@ Diagrams and illustrations from the [moncsdocs-media CDN](https://github.com/Moe
 
 ## Mathematical & Logical Formalization
 
+> **IMPORTANT**: All mathematical expressions MUST use `\( ... \)` for inline math and `\[ ... \]` for display math. NEVER use `$` or `$$`.
+
 ### Formal Definition
 
 Precise mathematical or logical notation:

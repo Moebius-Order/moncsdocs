@@ -129,6 +129,7 @@ We welcome contributions from the global CS community. Your expertise helps make
 - **Formatting**: Follow Markdown conventions and project style
 - **Grammar**: Clear, concise, technically precise English
 - **Attribution**: Cite sources for non-original content
+- **Mathematical Notation**: Use `\( \)` and `\[ \]` only (never `$` or `$$`)
 - **License Agreement**: By submitting a PR, you agree to license your contribution under CC BY-SA 4.0
 
 ### What We're Looking For
@@ -237,6 +238,7 @@ git checkout -b feature/your-topic
 
 # Make your changes
 # Edit markdown files, add content
+# IMPORTANT: Use \( \) for inline math, \[ \] for block math (never $ or $$)
 
 # Commit and push
 git add .

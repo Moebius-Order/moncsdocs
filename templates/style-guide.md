@@ -1,6 +1,6 @@
 # MON CS DOCS Style Guide
 
-**Version**: 1.0  
+**Version**: 1.1  
 **Last Updated**: 2026-02-23  
 **Maintainer**: Moebius Order
 
@@ -194,23 +194,66 @@ Use to separate major sections.
 
 ## Mathematical Notation
 
+### CRITICAL STANDARD: LaTeX Delimiters Only
+
+**MANDATORY**: All mathematical expressions MUST use LaTeX-style delimiters that are compatible with our rendering engine.
+
 ### Inline Math
+
+**Format**: Use `\( ... \)` for inline mathematical expressions.
+
 ```markdown
 The time complexity is \( O(n \log n) \).
+For any input size \( n \), the algorithm runs in \( O(n^2) \) time.
 ```
 
-### Block Math
+**Rendered as**: The time complexity is \( O(n \log n) \).
+
+### Block (Display) Math
+
+**Format**: Use `\[ ... \]` for centered, display-style equations.
+
 ```markdown
 \[
 f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \]
 ```
 
-**Rules**:
-- Use `\( ... \)` for inline (never `$ ... $`)
-- Use `\[ ... \]` for display (never `$$ ... $$`)
-- Define variables clearly
-- Explain equations in text
+**Rendered as**: 
+\[
+f(n) = \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+\]
+
+### Prohibited Syntax
+
+**NEVER USE**:
+- ❌ Single dollar signs: `$O(n)$`
+- ❌ Double dollar signs: `$$E = mc^2$$`
+- ❌ Any variation of `$...$` or `$$...$$`
+
+**Why Dollar Signs Are Prohibited**:
+1. Our rendering system does NOT support dollar-sign delimiters
+2. Dollar signs will cause mathematical expressions to break on the platform
+3. Our CI/CD validation workflow flags dollar-sign usage as errors
+4. LaTeX-style `\(` and `\[` delimiters ensure cross-platform compatibility
+
+### Correct vs. Incorrect Examples
+
+| Scenario | ❌ WRONG | ✅ CORRECT |
+|:---------|:---------|:-----------|
+| Inline complexity | `The algorithm is $O(n)$.` | `The algorithm is \( O(n) \).` |
+| Inline equation | `Let $x = 5$.` | `Let \( x = 5 \).` |
+| Display equation | `$$f(x) = x^2$$` | `\[ f(x) = x^2 \]` |
+| Summation | `$$\sum_{i=1}^{n} i$$` | `\[ \sum_{i=1}^{n} i \]` |
+| Multiple inline | `$a$, $b$, $c$` | `\( a \), \( b \), \( c \)` |
+
+### Additional Rules
+
+- **Define variables clearly**: After any equation, explain what each variable represents
+- **Explain equations in text**: Don't just show math—describe what it means
+- **Use proper LaTeX syntax**: Ensure all braces `{}`, subscripts `_`, and superscripts `^` are correctly formatted
+- **Test rendering**: Preview your markdown to ensure math displays correctly
+- **Consistency**: Use the same notation throughout the entire article
 
 ---
 
@@ -334,6 +377,7 @@ According to Knuth (1997), this approach...
 - Use first person ("I think", "we believe")
 - Make unsubstantiated claims
 - Use excessive exclamation points
+- **Use dollar signs for math** (`$x$` or `$$x$$`)
 
 ✅ **Do**:
 - Use precise technical language
@@ -342,6 +386,7 @@ According to Knuth (1997), this approach...
 - Use third person or second person
 - Provide verifiable information
 - Maintain professional tone
+- **Use LaTeX delimiters for math** (`\( x \)` or `\[ x \]`)
 
 ---
 
@@ -353,7 +398,8 @@ Before submitting:
 - [ ] Grammar check completed  
 - [ ] All links verified
 - [ ] All images load correctly
-- [ ] Math renders properly
+- [ ] Math uses `\( \)` and `\[ \]` only (NO `$` or `$$`)
+- [ ] Math renders properly in preview
 - [ ] Code examples tested
 - [ ] Consistent terminology
 - [ ] Proper heading hierarchy
