@@ -1,0 +1,84 @@
+# Code Owners for MON CS DOCS
+# Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global fallback - Moebius Order team reviews everything by default
+* @Moebius-Order/moncsdocs-maintainers
+
+# ============================================================================
+# CORE DOCUMENTATION
+# ============================================================================
+
+# Main README and project documentation
+README.md @Moebius-Order/moncsdocs-core
+CONTRIBUTING.md @Moebius-Order/moncsdocs-core
+LICENSE @Moebius-Order/moncsdocs-core
+CODE_OF_CONDUCT.md @Moebius-Order/moncsdocs-core
+
+# ============================================================================
+# TEMPLATES
+# ============================================================================
+
+# All templates require review from template maintainers
+/templates/ @Moebius-Order/moncsdocs-maintainers
+/templates/*.md @Moebius-Order/moncsdocs-maintainers
+
+# ============================================================================
+# GITHUB CONFIGURATION
+# ============================================================================
+
+# GitHub workflows and automation
+/.github/ @Moebius-Order/moncsdocs-core
+/.github/workflows/ @Moebius-Order/moncsdocs-core
+/.github/ISSUE_TEMPLATE/ @Moebius-Order/moncsdocs-core
+/.github/PULL_REQUEST_TEMPLATE/ @Moebius-Order/moncsdocs-core
+
+# ============================================================================
+# DOCUMENTATION CATEGORIES BY PILLAR
+# ============================================================================
+
+# Foundational Theory
+/docs/foundations/ @Moebius-Order/theory-maintainers
+/docs/foundations/mathematics/ @Moebius-Order/theory-maintainers
+/docs/foundations/algorithms/ @Moebius-Order/theory-maintainers
+/docs/foundations/data-structures/ @Moebius-Order/theory-maintainers
+/docs/foundations/computational-theory/ @Moebius-Order/theory-maintainers
+/docs/foundations/information-theory/ @Moebius-Order/theory-maintainers
+
+# Hardware & Architecture
+/docs/hardware/ @Moebius-Order/hardware-maintainers
+/docs/hardware/digital-logic/ @Moebius-Order/hardware-maintainers
+/docs/hardware/computer-organization/ @Moebius-Order/hardware-maintainers
+/docs/hardware/embedded-systems/ @Moebius-Order/hardware-maintainers
+/docs/hardware/performance-engineering/ @Moebius-Order/hardware-maintainers
+
+# Software Paradigms
+/docs/software/ @Moebius-Order/software-maintainers
+/docs/software/programming-principles/ @Moebius-Order/software-maintainers
+/docs/software/software-engineering/ @Moebius-Order/software-maintainers
+/docs/software/compilers/ @Moebius-Order/software-maintainers
+/docs/software/operating-systems/ @Moebius-Order/software-maintainers
+
+# Systems & Networking
+/docs/systems/ @Moebius-Order/systems-maintainers
+/docs/systems/networks/ @Moebius-Order/systems-maintainers
+/docs/systems/distributed-systems/ @Moebius-Order/systems-maintainers
+/docs/systems/databases/ @Moebius-Order/systems-maintainers
+/docs/systems/security/ @Moebius-Order/systems-maintainers
+
+# ============================================================================
+# SPECIAL CONTENT TYPES
+# ============================================================================
+
+# Category index files (README.md in each category)
+**/README.md @Moebius-Order/moncsdocs-maintainers
+
+# High-level architectural documentation
+/docs/README.md @Moebius-Order/moncsdocs-core
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# - All pull requests require at least one review from code owners
+# - Core team members can review any section
+# - Domain experts are assigned to specific pillars
+# - Teams should be created in GitHub organization settings
