@@ -1,193 +1,88 @@
-## 📝 Pull Request Description
+## Description
+<!-- Provide a clear and concise description of what this PR adds or changes -->
 
-**Type of Change**:
-<!-- Select one by placing an 'x' in the brackets -->
-- [ ] 🔴 New Topic/Article
-- [ ] 🟡 Content Improvement
-- [ ] 🐞 Bug Fix (inaccuracy or error)
-- [ ] 🎨 Visual/Diagram Addition
-- [ ] 📚 New Category
-- [ ] ⚙️ Template/Infrastructure
-- [ ] 📖 Documentation Update
+## Type of Contribution
+<!-- Check all that apply -->
+- [ ] New article/topic
+- [ ] Content improvement (existing article)
+- [ ] Error correction/bug fix
+- [ ] Visual/diagram addition
+- [ ] Documentation update
+- [ ] Template modification
+- [ ] Other (please specify):
 
-**Summary**:
-<!-- Brief description of what this PR accomplishes -->
+## Topic Details
+<!-- Fill in the details about your contribution -->
+- **Category**: <!-- e.g., Data Structures, Algorithms, Operating Systems -->
+- **Pillar**: <!-- Foundational Theory, Hardware & Architecture, Software Paradigms, Systems & Networking -->
+- **Difficulty**: <!-- Beginner / Intermediate / Advanced -->
+- **Article Title**: <!-- If adding/editing an article -->
 
----
-
-## 🎯 What Changes Are Included?
-
-### Files Changed
-<!-- List the main files modified or added -->
-- `path/to/file1.md` - Description of changes
-- `path/to/file2.md` - Description of changes
-
-### Content Overview
-<!-- Detailed explanation of what you've added or changed -->
-
-**New Content**:
-- 
-
-**Improvements**:
-- 
-
-**Fixes**:
-- 
-
----
-
-## 📚 Related Issues
-
-<!-- Link to related issues using keywords -->
-Closes #
-Relates to #
-Fixes #
-
----
-
-## 🔍 Quality Checklist
+## Checklist
+<!-- Ensure you've completed all applicable items -->
 
 ### Content Quality
-- [ ] **Accuracy**: All technical information is factually correct
-- [ ] **Clarity**: Explanations are clear and accessible to target audience
-- [ ] **Completeness**: Topic covers fundamentals through applications
-- [ ] **Structure**: Follows template structure appropriately
-- [ ] **Grammar**: Proper English grammar and spelling
-- [ ] **Citations**: Sources cited where appropriate
+- [ ] Content is technically accurate and well-researched
+- [ ] Writing is clear and appropriate for target audience
+- [ ] Examples and explanations are correct
+- [ ] Mathematical notation renders correctly (if applicable)
+- [ ] Citations provided for non-original content
 
-### Technical Requirements
-- [ ] **Markdown**: Valid Markdown syntax
-- [ ] **LaTeX**: Math notation renders correctly (if applicable)
-- [ ] **Links**: All internal links are valid and point to correct files
-- [ ] **Images**: All images from CDN load correctly
-- [ ] **Code**: Code examples are syntactically correct (if applicable)
+### Template Compliance
+- [ ] Followed appropriate template ([article](templates/article-template.md) / [category](templates/category-index-template.md))
+- [ ] YAML frontmatter is complete and accurate
+- [ ] All required sections are included
+- [ ] Structure matches template guidelines
 
-### Style Guide Compliance
-- [ ] **Formatting**: Follows [style guide](../templates/style-guide.md)
-- [ ] **File Naming**: Uses kebab-case (lowercase-with-hyphens)
-- [ ] **Frontmatter**: YAML frontmatter is complete and correct
-- [ ] **Headings**: Proper heading hierarchy (no skipped levels)
-- [ ] **Tone**: Maintains professional, educational tone
+### Style & Formatting
+- [ ] Follows [style guide](templates/style-guide.md)
+- [ ] File naming convention followed (lowercase, hyphens)
+- [ ] Markdown formatting is correct
+- [ ] Code blocks use proper syntax highlighting
+- [ ] Mathematical notation uses `\( \)` and `\[ \]` (not `$` or `$$`)
 
-### Documentation Standards
-- [ ] **Prerequisites**: Listed clearly if applicable
-- [ ] **Difficulty**: Appropriate difficulty level assigned
-- [ ] **Category**: Correctly categorized under proper pillar
-- [ ] **Index Updated**: Category README updated if new topic added
-- [ ] **Related Topics**: Links to related content where appropriate
+### Links & Media
+- [ ] All internal links work correctly
+- [ ] External links are valid and relevant
+- [ ] Images hosted on [moncsdocs-media CDN](https://github.com/Moebius-Order/moncsdocs-media)
+- [ ] Image alt text is descriptive and accessible
+- [ ] Diagrams use proper CDN URLs
 
----
+### Git Hygiene
+- [ ] Commit messages are descriptive (use: Add/Fix/Improve/Update)
+- [ ] Branch name is descriptive
+- [ ] No merge conflicts with main branch
+- [ ] Only relevant files are included
 
-## 📚 Target Audience
+## Related Issues
+<!-- Link any related issues -->
+Closes #
+Relates to #
 
-**Who will benefit from this content?**
-<!-- Check all that apply -->
-- [ ] High school students (NCERT curriculum)
-- [ ] University CS students (undergraduate)
-- [ ] Graduate students / Researchers
-- [ ] Software engineers / Professionals
-- [ ] Self-learners / Bootcamp students
-- [ ] Interview preparation
+## Screenshots/Preview
+<!-- If applicable, add screenshots or preview of rendered content -->
 
-**Difficulty Level**: 
-<!-- Check one -->
-- [ ] Beginner
-- [ ] Intermediate  
-- [ ] Advanced
-- [ ] Mixed
+## Additional Context
+<!-- Any additional information that would help reviewers -->
 
----
-
-## 🧪 Testing Performed
-
-### Verification Steps
-<!-- What did you do to verify the content? -->
-- [ ] Read through entire article for clarity
-- [ ] Tested all code examples (if applicable)
+## Testing
+<!-- How did you verify your changes? -->
+- [ ] Previewed rendered Markdown locally
 - [ ] Verified all links work
-- [ ] Checked images load from CDN
-- [ ] Validated LaTeX renders correctly
-- [ ] Reviewed against authoritative sources
+- [ ] Tested code examples (if applicable)
+- [ ] Checked mathematical notation rendering
 
-### Reference Materials Used
-<!-- List textbooks, papers, or resources you consulted -->
-1. 
-2. 
-3. 
-
----
-
-## 🎨 Visual Assets
-
-**Diagrams Included**:
-<!-- List any diagrams used from moncsdocs-media -->
-- [ ] No diagrams needed
-- [ ] Using existing CDN assets: 
-- [ ] New diagrams submitted to moncsdocs-media: PR #
+## License Confirmation
+<!-- Required for all contributions -->
+- [ ] I am the original author of this content OR have permission to contribute it
+- [ ] I agree to license this contribution under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- [ ] This content does not infringe on any third-party intellectual property
+- [ ] I understand I will be credited in the article metadata
 
 ---
 
-## 🔗 Related Pull Requests
-
-<!-- Link to related PRs in this or other repos -->
-- Related to moncsdocs-media PR: 
-- Builds on PR: 
-- Depends on PR: 
-
----
-
-## 💬 Additional Context
-
-### Motivation
-<!-- Why is this content needed? -->
-
-### Learning Impact
-<!-- How will this help learners? -->
-
-### Future Work
-<!-- What related topics could be added in the future? -->
-
----
-
-## 👥 Contribution Details
-
-**Author**: @your-username
-
-**Contributor Type**:
-- [ ] First-time contributor
-- [ ] Returning contributor
-- [ ] Core team member
-
-**Time Investment**: Approximately X hours
-
-**Review Requests**:
-<!-- Tag specific reviewers if you'd like their input -->
-- Technical accuracy: @
-- Content clarity: @
-- Category maintainer: @
-
----
-
-## 📜 License Agreement
-
-- [ ] I confirm that I have the legal right to contribute this content
-- [ ] I agree to license my contribution under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- [ ] I have properly attributed any third-party sources
-- [ ] All content is original or properly cited
-
----
-
-## 🚀 Post-Merge Checklist
-
-<!-- For maintainers after merging -->
-- [ ] Update category index if needed
-- [ ] Add to changelog
-- [ ] Announce in community channels
-- [ ] Update related documentation
-- [ ] Close related issues
-
----
-
-**Thank you for contributing to MON CS DOCS!** 🎉
-
-Your contribution helps make Computer Science education accessible to everyone.
+**For Maintainers:**
+- [ ] Technical accuracy verified
+- [ ] Pedagogical quality approved
+- [ ] Style and formatting approved
+- [ ] Ready to merge

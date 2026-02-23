@@ -1,8 +1,10 @@
-# .github/FUNDING.yml
-# Support MON CS DOCS and Moebius Order
+# GitHub Sponsors funding file
+# Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
 
-github: [moebius-order]
-patreon: moebiusorder
+# Moebius Order funding options
+github: # Add GitHub Sponsors username if applicable
+patreon: moebius_order
 ko_fi: moebiusorder
-buy_me_a_coffee: moebiusorder
-custom: ['https://mcdocs.moebiusorder.com/donate']
+custom:
+  - "https://mcdocs.moebiusorder.com/donate"
+  - "https://buymeacoffee.com/moebiusorder"
