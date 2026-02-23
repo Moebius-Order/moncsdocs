@@ -1,0 +1,114 @@
+# LICENSE
+
+## MonCSDocs Content Repository
+
+This repository is part of the **MonCSDocs Project**, managed by **Moebius Order**.
+
+Organization: https://github.com/moebius-order
+
+---
+
+## License Designation
+
+The content in this repository is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit
+- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license
+
+---
+
+## Company vs. Project Distinction
+
+**IMPORTANT NOTICE:**
+
+The **MonCSDocs content** in this repository is **Open Source** and licensed under CC BY-SA 4.0.
+
+However, **Moebius Order** as an organization, including its internal code, proprietary systems, and other private repositories, remains **private and proprietary**. This license applies exclusively to the educational content within the MonCSDocs project and does not extend to any other Moebius Order intellectual property.
+
+---
+
+## Attribution Requirements
+
+When using, sharing, or adapting content from this repository, you must provide appropriate attribution as follows:
+
+**Required Attribution:**
+> "The MonCSDocs Project by Moebius Order and its contributors"
+
+With a link to this repository: https://github.com/Moebius-Order/moncsdocs
+
+**Example Attribution:**
+```
+Content adapted from The MonCSDocs Project by Moebius Order and its contributors
+(https://github.com/Moebius-Order/moncsdocs), licensed under CC BY-SA 4.0.
+```
+
+---
+
+## Share-Alike Requirement
+
+Any derivative work, modifications, or "forks" of this content must be distributed under the same **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
+
+You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+---
+
+## Contribution Agreement
+
+By submitting a Pull Request (PR) or any contribution to this repository, you agree that:
+
+1. Your contribution will be licensed under the **CC BY-SA 4.0** license
+2. You have the right to submit the content under this license
+3. You understand that your contribution becomes part of the open-source MonCSDocs project
+4. You grant Moebius Order and the MonCSDocs community the right to use, modify, and distribute your contribution under these terms
+
+Submitting a PR constitutes your acceptance of these terms.
+
+---
+
+## No Warranty / Liability Disclaimer
+
+**DISCLAIMER:**
+
+The MonCSDocs content is provided **"AS-IS"** without warranty of any kind, either expressed or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+**Educational Content Notice:**
+
+This repository contains educational materials and documentation related to Computer Science. While we strive for accuracy, the content may contain:
+- Theoretical concepts that are subject to interpretation
+- Educational explanations that may be simplified for learning purposes
+- Information that may become outdated as technology evolves
+- Errors or inaccuracies despite our best efforts
+
+**Limitation of Liability:**
+
+Moebius Order, its contributors, and maintainers shall not be held liable for:
+- Any inaccuracies, errors, or omissions in the content
+- Any direct, indirect, incidental, consequential, or punitive damages arising from the use of this content
+- Any decisions made based on the information provided in this repository
+
+Users are encouraged to verify information independently and use the content as a supplementary educational resource.
+
+---
+
+## Full Legal Code
+
+This is a human-readable summary of (and not a substitute for) the license.
+
+For the complete legal text of the Creative Commons Attribution-ShareAlike 4.0 International License, please visit:
+
+**https://creativecommons.org/licenses/by-sa/4.0/legalcode**
+
+---
+
+## Contact
+
+For questions about licensing or contributions, please open an issue in this repository or contact Moebius Order through the organization page.
+
+---
+
+© 2026 Moebius Order. Content licensed under CC BY-SA 4.0.
