@@ -1,0 +1,206 @@
+name: Content Validation
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'templates/**/*.md'
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**/*.md'
+
+jobs:
+  validate-markdown:
+    name: Validate Markdown Files
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+        
+      - name: Lint Markdown files
+        run: |
+          markdownlint 'docs/**/*.md' --ignore node_modules || true
+        continue-on-error: true
+
+  check-links:
+    name: Check for Broken Links
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install markdown-link-check
+        run: npm install -g markdown-link-check
+        
+      - name: Check links in changed files
+        run: |
+          find docs -name '*.md' -exec markdown-link-check --quiet --config .github/markdown-link-check-config.json {} \; || true
+        continue-on-error: true
+
+  validate-frontmatter:
+    name: Validate YAML Frontmatter
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install PyYAML
+        run: pip install pyyaml
+        
+      - name: Validate frontmatter
+        run: |
+          python - <<'EOF'
+          import os
+          import re
+          import yaml
+          import sys
+          
+          def validate_frontmatter(filepath):
+              """Check if markdown file has valid YAML frontmatter."""
+              with open(filepath, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              
+              # Check for frontmatter
+              if not content.startswith('---'):
+                  print(f"⚠️  {filepath}: Missing frontmatter")
+                  return False
+              
+              # Extract frontmatter
+              match = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+              if not match:
+                  print(f"❌ {filepath}: Invalid frontmatter format")
+                  return False
+              
+              try:
+                  frontmatter = yaml.safe_load(match.group(1))
+                  
+                  # Required fields for articles in docs/
+                  if '/docs/' in filepath and filepath.endswith('.md'):
+                      required = ['title', 'difficulty']
+                      missing = [field for field in required if field not in frontmatter]
+                      
+                      if missing:
+                          print(f"⚠️  {filepath}: Missing required fields: {missing}")
+                          return False
+                  
+                  print(f"✅ {filepath}: Valid frontmatter")
+                  return True
+                  
+              except yaml.YAMLError as e:
+                  print(f"❌ {filepath}: YAML parsing error: {e}")
+                  return False
+          
+          # Find all markdown files in docs/
+          errors = []
+          for root, dirs, files in os.walk('docs'):
+              for file in files:
+                  if file.endswith('.md') and file != 'README.md':
+                      filepath = os.path.join(root, file)
+                      if not validate_frontmatter(filepath):
+                          errors.append(filepath)
+          
+          if errors:
+              print(f"\n⚠️  Found {len(errors)} file(s) with frontmatter issues")
+              print("Note: This is a warning, not blocking PR")
+          else:
+              print("\n✅ All files have valid frontmatter")
+          EOF
+        continue-on-error: true
+
+  check-file-naming:
+    name: Check File Naming Conventions
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Validate file names
+        run: |
+          echo "Checking file naming conventions..."
+          
+          # Check for files with uppercase or spaces
+          invalid_files=$(find docs -name '*.md' -type f | grep -E '[A-Z ]' || true)
+          
+          if [ -n "$invalid_files" ]; then
+            echo "⚠️  Warning: Files should use lowercase with hyphens:"
+            echo "$invalid_files"
+            echo ""
+            echo "Example: 'Binary Search.md' should be 'binary-search.md'"
+          else
+            echo "✅ All files follow naming conventions"
+          fi
+        continue-on-error: true
+
+  check-math-notation:
+    name: Check Mathematical Notation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Check for dollar sign math notation
+        run: |
+          echo "Checking for incorrect math notation ($ or $$)..."
+          
+          # Look for $...$ or $$...$$ which should be \(...\) or \[...\]
+          files_with_dollars=$(grep -r -l '\$\$\|\$[^$]' docs/ --include='*.md' || true)
+          
+          if [ -n "$files_with_dollars" ]; then
+            echo "⚠️  Warning: Found files using $ for math notation:"
+            echo "$files_with_dollars"
+            echo ""
+            echo "Please use LaTeX delimiters:"
+            echo "  Inline: \\( ... \\) instead of $ ... $"
+            echo "  Block:  \\[ ... \\] instead of $$ ... $$"
+          else
+            echo "✅ Math notation follows guidelines"
+          fi
+        continue-on-error: true
+
+  summary:
+    name: Validation Summary
+    runs-on: ubuntu-latest
+    needs: [validate-markdown, check-links, validate-frontmatter, check-file-naming, check-math-notation]
+    if: always()
+    
+    steps:
+      - name: Summary
+        run: |
+          echo "## Validation Summary 📋" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All validation checks completed!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Note: Most checks are warnings only and won't block PRs." >> $GITHUB_STEP_SUMMARY
+          echo "Please review any warnings and fix issues when possible." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### What was checked:" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Markdown formatting" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Broken links" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ YAML frontmatter validity" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ File naming conventions" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Mathematical notation format" >> $GITHUB_STEP_SUMMARY
