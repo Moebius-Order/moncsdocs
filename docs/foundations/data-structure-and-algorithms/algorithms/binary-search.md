@@ -1073,15 +1073,3 @@ These are highly optimized, battle-tested implementations. Use them instead of r
 4. Bloch, J. (2006). "Extra, Extra - Read All About It: Nearly All Binary Searches and Mergesorts are Broken." Google Research Blog.
 
 ---
-
-<div align="center">
-
-**[Back to Foundational Theory](./README.md)** | **[View All Topics](../README.md)** | **[Report Issue](../../issues/new?template=bug_report.md)**
-
----
-
-Part of [MON CS DOCS](../../README.md) | Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
-If you found this helpful, star the [repository](https://github.com/Moebius-Order/moncsdocs)!
-
-</div>

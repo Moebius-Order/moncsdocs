@@ -758,5 +758,3 @@ Since \(f(n) = \Theta(n) = \Theta(n^{\log_b a})\), we're in Case 2:
 6. **Real-world impact:** The difference between O(n²) and O(n log n) can mean seconds vs. hours on large datasets
 
 ---
-
-[Back to Foundational Theory index](./README.md)
