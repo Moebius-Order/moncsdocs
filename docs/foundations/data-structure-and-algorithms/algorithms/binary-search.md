@@ -1,6 +1,6 @@
 ---
 title: "Binary Search"
-category: "Algorithms"
+category: "Searching"
 pillar: "Foundational Theory"
 tags: ["algorithms", "searching", "divide-and-conquer", "arrays"]
 difficulty: "Beginner"
