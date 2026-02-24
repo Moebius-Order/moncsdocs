@@ -29,7 +29,7 @@ To build accessible, high-quality Computer Science documentation that bridges th
 
 ### Target Audience
 
-- **Students**: From high school (NCERT curriculum) to university-level CS courses
+- **Students**: From high school to university-level CS courses
 - **Engineers**: Software developers seeking deeper theoretical understanding
 - **Researchers**: Academic professionals requiring comprehensive reference materials
 - **Self-learners**: Anyone passionate about Computer Science fundamentals
