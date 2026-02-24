@@ -11,6 +11,9 @@ on:
     paths:
       - 'docs/**/*.md'
 
+permissions:
+  contents: read
+
 jobs:
   validate-markdown:
     name: Validate Markdown Files
