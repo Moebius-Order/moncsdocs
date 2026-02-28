@@ -1,0 +1,94 @@
+# Custom vocabulary for MON CS DOCS
+# Add project-specific terms that Vale should accept
+
+MON CS DOCS
+moncsdocs
+moncsdocs-media
+Moebius Order
+NCERT
+Infinite Gacha
+asymptotic
+O\(n\)
+O\(log n\)
+O\(n²\)
+Theta
+Omega
+Big-O
+ALU
+CPU
+GPU
+RAM
+API
+HTTP
+HTTPS
+TCP
+IP
+DNS
+URL
+JSON
+XML
+HTML
+CSS
+SQL
+NoSQL
+RESTful
+CRUD
+microarchitecture
+pipelining
+superscalar
+out-of-order
+cache
+multicore
+multithreading
+hyperthreading
+ISA
+RISC
+CISC
+x86
+ARM
+MIPS
+paradigm
+paradigms
+functional
+procedural
+object-oriented
+declarative
+imperative
+polymorphism
+encapsulation
+inheritance
+abstraction
+immutability
+higher-order
+lambda
+closure
+recursion
+memoization
+idempotent
+idempotency
+CAP
+ACID
+BASE
+eventual consistency
+sharding
+replication
+partitioning
+load balancing
+latency
+throughput
+bandwidth
+fault tolerance
+distributed
+concurrency
+parallelism
+synchronous
+asynchronous
+mutex
+semaphore
+deadlock
+livelock
+race condition
+atomic
+volatile
+thread-safe
+reentrancy
