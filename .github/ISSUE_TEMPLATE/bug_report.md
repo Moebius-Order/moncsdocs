@@ -1,56 +1,40 @@
 ---
-name: Bug Report
-about: Report an error, typo, or technical inaccuracy
-title: '[BUG] '
-labels: 'bug'
-assignees: ''
+name: Bug report
+about: Report a problem in existing documentation or media
+title: "[Bug] "
+labels: "type: bug"
+assignees: ""
 ---
 
-## Bug Description
-<!-- A clear and concise description of what the bug is -->
+### Summary
 
-## Location
-<!-- Where is this bug located? -->
-- **File**: <!-- e.g., docs/foundations/binary-search-tree.md -->
-- **Section**: <!-- e.g., "Complexity Analysis" section -->
-- **Line/Paragraph**: <!-- Approximate location -->
+Briefly describe the problem.
 
-## Type of Issue
-<!-- Check all that apply -->
-- [ ] Technical inaccuracy
-- [ ] Typo or grammatical error
-- [ ] Broken link
-- [ ] Incorrect mathematical notation
-- [ ] Code example error
-- [ ] Formatting issue
-- [ ] Other (please specify)
+### Affected Area
 
-## Current Content
-<!-- Quote the problematic content or describe what's wrong -->
-```
-Paste the incorrect content here
-```
+- Repository: `moncsdocs` / `moncsdocs-media`
+- Path(s):  
+  - `docs/...` or `assets/...`
 
-## Expected/Correct Content
-<!-- What should it be instead? -->
-```
-Provide the corrected content or explanation
-```
+### Description
 
-## Why This is Wrong
-<!-- Explain why the current content is incorrect -->
+What is wrong or unexpected?
 
-## Supporting Evidence
-<!-- Optional: Links to authoritative sources, textbooks, papers, etc. -->
+- Incorrect concept or explanation
+- Broken link
+- Formatting or rendering issue
+- Other (specify)
 
-## Additional Context
-<!-- Any other context or screenshots about the issue -->
+### Steps to Reproduce
 
-## Suggested Fix
-<!-- If you have a specific suggestion for how to fix this -->
+1. Go to page or file:
+2. What you expected to see:
+3. What you actually saw:
 
----
+### Impact
 
-**Would you like to submit a PR to fix this?**
-- [ ] Yes, I'll submit a fix
-- [ ] No, just reporting
+How does this affect readers or consumers of the docs/media?
+
+### Proposed Fix (Optional)
+
+If you know how to fix it, describe the change or reference a source.
