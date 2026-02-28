@@ -168,7 +168,7 @@ To sustain and grow this project, we rely on community support.
 Click the **Sponsor** button at the top of this repository, or visit:
 
 - **Website Donation Page**: [mcdocs.moebiusorder.com/donate](https://mcdocs.moebiusorder.com/donate)
-- **Patreon**: [patreon.com/moebius_order](https://patreon.com/moebius_order)
+- **Patreon**: [patreon.com/moebius_order](https://patreon.com/moebiusorder)
 - **Ko-fi**: [ko-fi.com/moebiusorder](https://ko-fi.com/moebiusorder)
 - **Buy Me a Coffee**: [buymeacoffee.com/moebiusorder](https://buymeacoffee.com/moebiusorder)
 
@@ -182,7 +182,7 @@ Join our growing community of learners, educators, and contributors:
 
 - **Telegram Channel**: [t.me/moncsdocs](https://t.me/moncsdocs) — Announcements and updates
 - **Telegram Chat**: [t.me/moncsdocschat](https://t.me/moncsdocschat) — Discussion and questions
-- **Discord Server**: [discord.gg/yb6XgkhBXU](https://discord.gg/yb6XgkhBXU) — Real-time collaboration
+- **Discord Server**: [discord.gg/yb6XgkhBXU](https://dsc.gg/moncsdocs) — Real-time collaboration
 - **Reddit**: [r/moncsdocs](https://www.reddit.com/r/moncsdocs) — Long-form discussions
 
 ### Contact
